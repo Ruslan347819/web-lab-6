@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Ruslan Motriuk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <button id="theme-toggle">Увімкнути нічний режим</button>
+    </div>
+
+    <div class="resume-wrapper">
+        <aside class="sidebar">
+            <header>
+                <div class="avatar">Р</div>
+                <h1>Ruslan Motriuk</h1>
+                <p class="role">Student, Developer & IT Enthusiast</p>
+                <div class="divider"></div>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> ruslan24536@gmail.com</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/Ruslan347819">Ruslan347819</a></p>
+                    <p><strong>Location:</strong> Snyatyn, Ukraine</p>
+                </div>
+            </header>
+
+            <section class="skills-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Programming:</strong><br>C, C#, PHP, Python</li>
+                    <li><strong>OS:</strong><br>Linux (Kali, Ubuntu), Windows</li>
+                    <li><strong>Cybersecurity:</strong><br>Nmap, Wireshark, SSH, encryption</li>
+                    <li><strong>Tools:</strong><br>Git, Blender, XML/Meta configs</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="content">
+            <section>
+                <h2>Objective</h2>
+                <p class="objective-text">Goal-oriented student and IT enthusiast with a strong foundation in programming, cybersecurity, and system administration. Seeking opportunities to apply my technical skills, solve complex problems, and further develop in software development and information technology. Experienced in network tools and creating game modifications.</p>
+            </section>
+
+            <section>
+                <h2>Experience & Projects</h2>
+                <div class="timeline-item">
+                    <h3>Academic Cybersecurity & System Administration Projects</h3>
+                    <em>Student Project | 2023 – Present</em>
+                    <ul>
+                        <li>Analyzed network traffic using Wireshark.</li>
+                        <li>Performed port scanning and vulnerability research using Nmap.</li>
+                        <li>Configured and administered Linux-based operating systems (Kali, Ubuntu).</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Game Server Development & Modding (GTA V)</h3>
+                    <em>Independent Projects | 2024 – Present</em>
+                    <ul>
+                        <li>Edited game configuration files (carcols.meta, vehicles.meta) to adjust physics and object behaviors.</li>
+                        <li>Created and integrated add-on vehicles into the game engine.</li>
+                        <li>Developed custom textures and utilized Blender for 3D modeling to enhance the visual experience.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <div class="timeline-item">
+                    <h3>Computer Engineering / Cybersecurity</h3>
+                    <em>Lviv Polytechnic National University | 2023 – Present</em>
+                    <p>Participating in practical laboratory work focused on network security, programming, and computer architecture.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Reviews</h2>
+                <div id="reviews-container">Завантаження відгуків...</div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2026 Руслан. Всі права захищено.</p>
+        <p class="sys-info" style="margin-top: 10px; font-size: 0.8rem;">Система: <span id="sys-os"></span> | Браузер: <span id="sys-browser"></span></p>
+    </footer>
+
+    <div id="contact-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <h2 style="margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; color: var(--text-main);">Залишити повідомлення</h2>
+            <form action="https://formspree.io/f/mbdzegdo" method="POST">
+                <label>Ім'я</label>
+                <input type="text" name="name" required>
+                
+                <label>Email</label>
+                <input type="email" name="email" required>
+                
+                <label>Номер телефону</label>
+                <input type="tel" name="phone">
+                
+                <label>Повідомлення</label>
+                <textarea name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="submit-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
