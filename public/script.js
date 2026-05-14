@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             message: this.message.value
         };
 
-        fetch('https://82def55cc3d583.lhr.life/api/contact', {
+        fetch('https://a8a6aa687bb466.lhr.life/api/contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
